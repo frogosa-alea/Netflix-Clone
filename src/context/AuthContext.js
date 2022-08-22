@@ -1,6 +1,7 @@
 import { createContext, useState, useContext, useEffect } from "react";
-import { auth } from "../firebase"
+import { auth, db } from "../firebase"
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth"
+import {setDoc,doc} from 'firebase/firestore'
 
 const AuthContext = createContext();
 
@@ -8,7 +9,17 @@ export function AuthContextProvider({children}) {
     const [user, setUser] = useState({})
 
     function signUp(email, password) {
-        return createUserWithEmailAndPassword(auth, email, password);
+        createUserWithEmailAndPassword(auth, email, password);
+        setDoc(doc(db, 'users', email), {
+            savedShows: []
+        }).then(() => {
+            console.log("Document has been added successfully");
+        }).catch(error => {
+            console.log('setDoc', error);
+        })
+        // db.collection('users').doc('email').set({
+        //     savedShows: []
+        // });
     }
 
     function logIn(email, password) {
