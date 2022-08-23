@@ -26,7 +26,13 @@ const Row = ({ title, fetchURL, rowId }) => {
 
   return (
     <>
-      <h2 className="text-white font-bold md:text-xl p-4">{title}</h2>
+      <h2
+        className="text-yellow-400 md:text-xl p-8 mt-2"
+        style={{ fontFamily: "Beon" }}
+      >
+        {title}
+      </h2>
+      <hr className="border-sky-200 mb-4" />
       <div className="relative flex items-center group">
         <MdChevronLeft
           className="bg-white left-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block"
