@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: "Beon";
+    src: url('./assets/fonts/Beon.otf');
+    src: url('./assets/fonts/beon-webfont.ttf') format('truetype');
+}
 
 body {
     background-color: #000;
