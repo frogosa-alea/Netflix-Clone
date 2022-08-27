@@ -20,7 +20,7 @@ const Signup = () => {
   return (
     <div className="w-full h-screen">
       <img
-        src="https://assets.nflxext.com/ffe/siteui/vlv3/0f07b807-7be1-457d-be88-eb9153d5d4e9/e1509908-2ac3-485a-a7d4-26d5fab7f9de/PH-en-20220815-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+        src="https://getwallpapers.com/wallpaper/full/0/e/f/824236-popular-classic-movies-wallpapers-1920x1139.jpg"
         alt="signup-bg"
         className="hidden sm:block absolute w-full h-full object-cover"
       />
@@ -28,7 +28,7 @@ const Signup = () => {
       <div className="fixed w-full px-4 py-24 z-50">
         <div className="max-w-[450px] h-[600px] mx-auto bg-black/75 text-white">
           <div className="max-w-[320px] mx-auto py-16">
-            <h1 className="text-3xl font-bold">Signup</h1>
+            <h1 className="text-3xl font-bold">Sign Up</h1>
             <form className="w-full flex flex-col py-4" onSubmit={handleSubmit}>
               <input
                 onChange={(e) => setEmail(e.target.value)}
@@ -46,7 +46,7 @@ const Signup = () => {
                 autoComplete="current-password"
                 className="p-3 my-2 bg-gray-700 rounded"
               />
-              <button className="bg-red-600 py-3 my-6 rounded font-bold">
+              <button className="bg-yellow-300 text-black py-3 my-6 rounded font-bold">
                 Sign Up
               </button>
               <div className="flex justify-between items-center text-gray-600">
@@ -58,7 +58,7 @@ const Signup = () => {
               </div>
               <p className="py-8">
                 <span className="text-gray-600">
-                  Already subscribed to Netflix?
+                  Already subscribed to Lights Out?
                 </span>{" "}
                 <Link to="/signin">Sign In</Link>
               </p>

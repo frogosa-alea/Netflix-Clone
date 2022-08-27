@@ -23,7 +23,7 @@ const Login = () => {
   return (
     <div className="w-full h-screen">
       <img
-        src="https://assets.nflxext.com/ffe/siteui/vlv3/0f07b807-7be1-457d-be88-eb9153d5d4e9/e1509908-2ac3-485a-a7d4-26d5fab7f9de/PH-en-20220815-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+        src="https://getwallpapers.com/wallpaper/full/0/e/f/824236-popular-classic-movies-wallpapers-1920x1139.jpg"
         alt="signup-bg"
         className="hidden sm:block absolute w-full h-full object-cover"
       />
@@ -50,7 +50,7 @@ const Login = () => {
                 autoComplete="current-password"
                 className="p-3 my-2 bg-gray-700 rounded"
               />
-              <button className="bg-red-600 py-3 my-6 rounded font-bold">
+              <button className="bg-yellow-300 text-black py-3 my-6 rounded font-bold">
                 Sign In
               </button>
               <div className="flex justify-between items-center text-gray-600">
@@ -61,7 +61,8 @@ const Login = () => {
                 <p>Need help?</p>
               </div>
               <p className="py-8">
-                <span className="text-gray-600">New to Netflix?</span>{" "}
+                <span className="text-gray-600">New to Lights Out?</span>
+                {"  "}
                 <Link to="/signup">Sign Up</Link>
               </p>
             </form>
